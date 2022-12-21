@@ -12,6 +12,7 @@ try:
 except:
     long_description = None
 
+REQUIREMENTS = [i.strip() for i in open("requirements.txt").readlines()]
 setup(
     name='intermol',
     version=versioneer.get_version(),
@@ -22,6 +23,7 @@ setup(
     author_email='ctk3b@virginia.edu, ctl4f@virginia.edu, edz3fz@virginia.edu, '
                  'michael.shirts@virginia.edu',
     url='https://github.com/shirtsgroup/intermol',
+    install_requires=REQUIREMENTS,
     packages=find_packages(),
     package_dir={'intermol': 'intermol'},
     package_data={'tests': ['*.py',
