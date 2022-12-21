@@ -1,0 +1,2 @@
+parmed @ git+https://github.com/parmed/parmed
+numpy
