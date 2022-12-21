@@ -13,6 +13,7 @@ Install from source
 Or if you plan on `contributing <development.html>`__ something::
 
     $ pip install --editable .
+    $ pip install git+https://github.com/shirtsgroup/InterMol.git
 
 Dependencies
 ------------
