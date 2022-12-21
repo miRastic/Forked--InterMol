@@ -13,7 +13,7 @@ We are currently in beta testing phase. Desmond<=>Gromacs<=>Lammps conversions a
 To check out how it works, use the ````convert.py```` script found in the ````intermol```` directory:
 
 ```bash
-$ python convert.py -h
+$ intermol-convert -h
 usage: convert.py [-h] [--des_in file] [--gro_in file file] [--lmp_in file] [--amb_in file file] [-crm_in file] 
                   [--desmond] [--gromacs] [--lammps] [--amber] [--charmm] [--odir directory]
                   [--oname prefix] [-e] [--efile EFILE] 
@@ -90,7 +90,7 @@ For example, to convert from desmond to gromacs and evalutate the energy of the 
 
 ```bash
 mkdir test_output
-python convert.py --des_in validation/inputs/Desmond/UnitTest/frag_opls2001/frag_opls2001.cms --gromacs --odir test_output -e
+intermol-convert --des_in validation/inputs/Desmond/UnitTest/frag_opls2001/frag_opls2001.cms --gromacs --odir test_output -e
 ```
 
 Note that the program may not give the same ASCII output; the goal is to
